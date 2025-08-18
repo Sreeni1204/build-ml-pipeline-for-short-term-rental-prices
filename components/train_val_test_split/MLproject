@@ -1,5 +1,8 @@
 name: download_file
-conda_env: conda.yml
+python_env:
+  poetry:
+    file: pyproject.toml
+    lock_file: poetry.lock
 
 entry_points:
   main:
