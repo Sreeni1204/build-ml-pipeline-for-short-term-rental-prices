@@ -31,6 +31,7 @@ def basic_data_cleaning(args):
     df_data_to_clean = pd.read_csv(artifact_path)
     logger.info("Input artifact downloaded and read")
     idx = df_data_to_clean['price'].between(args.min_price, args.max_price)
+    idx = df_data_to_clean['longitude'].between(-74.25, -73.50) & df_data_to_clean['latitude'].between(40.5, 41.2)
     df_data_to_clean = df_data_to_clean[idx].copy()
     # Convert last_review to datetime
     df_data_to_clean['last_review'] = pd.to_datetime(df_data_to_clean['last_review'])
