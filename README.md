@@ -30,6 +30,11 @@ In this project you will build such a pipeline.
   * [Release the pipeline](#release-the-pipeline)
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
 - [Cleaning up](#cleaning-up)
+- [Project Overview](#project-overview)
+- [Pipeline Visualization](#pipeline-visualization)
+- [Dependencies](#dependencies)
+- [Troubleshooting](#troubleshooting)
+- [Acknowledgments](#acknowledgments)
 
 ## Preliminary steps
 
@@ -595,6 +600,36 @@ If you see the any error while running the command:
 Please, make sure all steps are using **the same** python version and that you have **conda installed**. Additionally, *mlflow* and *wandb* packages are crucial and should have the same version.
 
 
+## Project Overview
+
+This project aims to build an end-to-end machine learning pipeline for predicting short-term rental prices in NYC. The pipeline automates data ingestion, cleaning, feature engineering, model training, and evaluation. It is designed to handle weekly data updates and retrain the model efficiently.
+
+## Pipeline Visualization
+
+Below is a visualization of the pipeline:
+
+![Pipeline Visualization](pipeline_visualization.png)
+
+## Dependencies
+
+The project uses the following key files for dependency management:
+
+- `python_env.yaml`: Specifies the Python version and dependencies for the project.
+- `requirements.txt`: Lists the Python packages required for the pipeline.
+
+Ensure that these files are correctly set up before running the pipeline.
+
+## Acknowledgments
+
+This project is part of the Udacity MLOps Nanodegree program. Special thanks to the Udacity team for providing the starter kit and resources.
+
+
+## Project Links
+
+Here are the links for the git repo and WandB project link
+
+- [Git Repo](https://github.com/Sreeni1204/build-ml-pipeline-for-short-term-rental-prices/tree/main)
+- [WandB Project](https://wandb.ai/sreeni1204/nyc_airbnb?nw=nwusersreeni1204)
 ## License
 
 [License](LICENSE.txt)
