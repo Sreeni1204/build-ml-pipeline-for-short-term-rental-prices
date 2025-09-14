@@ -1,8 +1,5 @@
 name: data_check
-python_env:
-  poetry:
-    file: pyproject.toml
-    lock_file: poetry.lock
+python_env: python_env.yaml
 
 entry_points:
   main:

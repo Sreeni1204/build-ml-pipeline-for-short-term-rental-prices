@@ -1,8 +1,5 @@
 name: nyc_airbnb
-python_env:
-  poetry:
-    file: pyproject.toml
-    lock_file: poetry.lock
+python_env: python_env.yaml
 
 entry_points:
   main:
@@ -18,4 +15,4 @@ entry_points:
         type: str
         default: ''
 
-    command: "python main.py main.steps=\\'{steps}\\' $(echo {hydra_options})"
+    command: "python main.py main.steps='{steps}' $(echo {hydra_options})"
